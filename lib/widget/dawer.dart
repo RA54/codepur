@@ -2,12 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
-  const MyDrawer({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    String url = "https://superstarsbio.com/wp-content/uploads/2019/09/Emeraude-Toubia-Makeup.jpg";
-
+    final imageUrl = "https://wallpaperaccess.com/full/4911683.jpg";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -18,20 +15,18 @@ class MyDrawer extends StatelessWidget {
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
-                accountName: Text("Suhmita"),
-                accountEmail: Text("sushmitashukla@gmail.com"),
+                accountName: Text("SuperSu"),
+                accountEmail: Text("SuperSu@gmail.com"),
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(url),
+                  backgroundImage: NetworkImage(imageUrl),
                 ),
               ),
-
             ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.home,
                 color: Colors.white,
               ),
-
               title: Text(
                 "Home",
                 textScaleFactor: 1.2,
